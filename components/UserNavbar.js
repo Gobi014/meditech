@@ -1,0 +1,24 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './UserNavbar.css'; // Import the CSS file for styling
+
+const UserNavbar = () => {
+  return (
+    <nav className="user-navbar">
+      <div className="navbar-logo">
+        <Link to="/">
+          <img src="data:image/png;base64,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" alt="MediTech" className="logo2" />
+        </Link>
+      </div>
+      <div className="navbar-links">
+        <Link to="/medicinepage" className="nav-link">Medicines</Link>
+        
+        <Link to="/payment" className="nav-link">Payment</Link>
+        <Link to="/about" className="nav-link">About</Link>
+        <Link to="/" className="nav-link">Logout</Link>
+      </div>
+    </nav>
+  );
+};
+
+export default UserNavbar;

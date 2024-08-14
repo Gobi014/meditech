@@ -1,0 +1,97 @@
+.navbar {
+  background: linear-gradient(to bottom, #9cd8f2, #cceaf6);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Fixed width for the navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  z-index: 1000;
+  border-right: 2px solid #fff; /* Border on the right side of the navbar */
+  animation: slideInDown 0.5s ease-in-out;
+  background-color: #e2f2f8;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  height: 100%; /* Full height of the navbar */
+  padding-top: 20px; /* Space at the top for the logo */
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 20px; /* Space between the logo and the menu items */
+  animation: fadeIn 1s ease-in;
+}
+
+.navbar-logo:hover {
+  color: #0d47a1;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  margin-top: 150px;/* Remove default margin */
+}
+
+.navbar-item {
+  margin: 15px 0; /* Increased vertical spacing between items */
+  animation: fadeIn 1s ease-in;
+  animation-delay: calc(0.1s * var(--i)); 
+  width: 100%; 
+  margin-top: 40px;/* Full width of the navbar */
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+  padding: 10px 15px; /* Padding for a rounded effect */
+  border-radius: 12px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #4cc2f5, #18a8e2); /* Slight background for contrast */
+}
+
+.navbar-link:hover {
+  color: #01255d;
+  transform: translateY(-2px); 
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.3); /* Darker background on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

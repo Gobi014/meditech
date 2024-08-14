@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  background-color: #c4eff6;
+  margin-right: 10px;
+}
+
+.user-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, #4cc2f5, #037aa9); 
+  color: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 250px; /* Sidebar width */
+  height: 100vh; /* Full height */
+  z-index: 1000; /* Ensure it stays on top */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-logo {
+  margin-bottom: 30px; /* Space below the logo */
+}
+
+.navbar-logo .logo2 {
+  height: 50px; /* Adjust logo height */
+  width: 100px; /* Adjust logo width */
+  margin-bottom: 30px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 20px 0; /* Increased spacing between navbar items */
+  padding: 10px 20px; /* Adjust padding for a better round shape */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center; /* Center the text */
+  width: auto; /* Auto width for rounded structure */
+  border-radius: 25px; /* Rounded structure */
+  background: rgba(255, 255, 255, 0.1); /* Light background to enhance the round effect */
+}
+
+.nav-link:hover {
+  color: #0d47a1;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+}
+
+.medicine-page {
+  padding: 20px;
+  margin-top: 130px;
+  margin-left: 250px; /* Ensure content does not overlap with sidebar */
+}
+
+.medicine-header {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px; /* Add space between buttons */
+}
+
+.medicine-header h1 {
+  font-family: 'Lato', sans-serif;
+  margin-right: auto; /* Pushes buttons to the right */
+  padding-left: 190px;
+}
+
+.medicine-header button {
+  padding: 5px 10px; /* Adjust button padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em; /* Adjust font size */
+  height: 40px; /* Consistent button height */
+  width: 150px;
+  background-color: #4cc2f5; /* Main button color */
+  background: linear-gradient(to bottom, #4cc2f5, #2297c6);
+  color: #fff;
+}
+
+.medicine-header button:hover {
+  background-color: #037aa9; /* Hover color */
+}
+
+.show-cart-btn {
+  background-color: #4cc2f5; /* Main button color */
+  color: #fff;
+}
+
+.show-cart-btn:hover {
+  background-color: #037aa9; /* Hover color */
+}
+
+.order-btn {
+  padding: 10px 20px; /* Ensure padding is consistent with other buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  height: 40px;
+  width: 150px;
+  background-color: #4cc2f5; /* Main button color */
+  background: linear-gradient(to bottom, #4cc2f5, #18a8e2);
+  color: #fff;
+  text-align: center;
+}
+
+.order-btn:hover {
+  background-color: #037aa9; /* Hover color */
+  background: linear-gradient(to bottom, #2e8bb3, #3cc5fa);
+}
+
+.medi_hide {
+  margin-right: 200px;
+  color: #fff;
+}
+
+.medi_hide:hover {
+  background-color: #138496;
+}
+
+.medicine-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.medicine-card {
+  width: calc(20% - 10px);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.medicine-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.medicine-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.medicine-info h2 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.medicine-info p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.medicine-pricing {
+  margin: 10px 0;
+}
+
+.medicine-price {
+  font-size: 1em;
+  color: #333;
+}
+
+.customer-id-input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.customer-id-input {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.file-label {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  height: 20px;
+}

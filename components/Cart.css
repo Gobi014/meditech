@@ -1,0 +1,86 @@
+.cart {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Position relative to viewport */
+  top: 10px; /* Distance from the top of the viewport */
+  right: 10px; /* Distance from the right of the viewport */
+  border: 1px solid #ddd; /* Border color to match design */
+  width: 300px; /* Fixed width for the cart */
+  z-index: 1000; /* Ensure it appears on top of other content */
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-item-price {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.cart-item-quantity {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.cart-item-remove {
+  background: linear-gradient(to bottom, #4cc2f5, #037aa9);
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Ensure consistent padding for all buttons */
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center; /* Center text inside button */
+  display: inline-block; /* Ensures button size is consistent */
+  width: 120px; /* Set a fixed width for consistency */
+  height: 40px; /* Set a fixed height for consistency */
+}
+
+.cart-item-remove:hover {
+  background: linear-gradient(to bottom, #3894bc, #46bded);
+}

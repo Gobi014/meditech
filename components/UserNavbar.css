@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+}
+
+.user-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, #4cc2f5, #037aa9); 
+  color: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 250px; /* Sidebar width */
+  height: 100vh; /* Full height */
+  z-index: 1000; /* Ensure it stays on top */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-logo {
+  margin-bottom: 30px; /* Space below the logo */
+}
+
+.navbar-logo .logo2 {
+  height: 50px; /* Adjust logo height */
+  width: 100px; /* Adjust logo width */
+  margin-bottom: 30px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 110px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 20px 0; /* Increased spacing between navbar items */
+  padding: 10px 20px; /* Adjust padding for a better round shape */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center; /* Center the text */
+  width: auto; /* Auto width for rounded structure */
+  border-radius: 25px; /* Rounded structure */
+  background: rgba(255, 255, 255, 0.1); /* Light background to enhance the round effect */
+}
+
+.nav-link:hover {
+  color: #0d47a1;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+}
